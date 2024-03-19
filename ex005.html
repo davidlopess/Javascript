@@ -13,12 +13,61 @@
     </style>
 </head>
 <body>
-    <h1>Aula de DOM</h1>
+    <h1 class="texto">Aula de DOM</h1>
     <P>Aqui vai seu resultado</P>
-    <p>Aprendendo a trabalhar com <strong>DOM</strong></p>
+    <p name="nome">Aprendendo a trabalhar com <strong>DOM</strong></p>
     <div>Clique em mim</div>
     <script>
+
+        // window.document.write(window.document.URL)
+
+        //  por tag
+
+        // var p1 = window.document.getElementsByTagName('p')[0]
+        // window.document.write(p1.innerText)
+        // p1.style.fontSize = '25px'
+        // p1.style.color = 'blue'
+        // var corpo = window.document.body
+        // corpo.style.backgroundColor = 'red'
+
+        // ===========================================
+
+        // por ID
+
+        // var i = window.document.getElementById('res')
+        // window.document.write(i.innerText)
+        // i.style.border = ('2px solid black')
+        // i.style.padding = ('20px')
+        // i.style.backgroundColor = ('red')
+        //  window.document.getElementById('res').innerText = 'ola mundo'
+        //  ou
+        // i.innerText = 'diga'
+
+        // =======================
+
+        // Por Nome
+
+        // var pag = window.document.getElementsByName('nome')[0]      
+        //  window.document.write(pag.innerHTML)
+        //  window.document.getElementsByName('nome')[0].innerHTML = 'rita'
+        // pag.innerHTML = 'david'
+
+        // Por Class
+
+        // var titulo = window.document.getElementsByClassName('texto')[0]
+        // window.document.write(titulo.innerHTML)
+        // titulo.innerHTML = 'rita'
         
+        // Por Seletor
+
+        var nome1 = window.document.querySelector('h1.texto')
+        nome1.style.color = 'red'
+        window.document.write(nome1.innerText)
+        nome1.style.fontSize = '20px'
+
+
+
+
     </script>
 
     
