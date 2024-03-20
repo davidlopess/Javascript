@@ -60,10 +60,15 @@
         
         // Por Seletor
 
-        var nome1 = window.document.querySelector('h1.texto')
-        nome1.style.color = 'red'
-        window.document.write(nome1.innerText)
-        nome1.style.fontSize = '20px'
+        // var nome1 = window.document.querySelector('h1.texto')
+        // nome1.style.color = 'red'
+        // window.document.write(nome1.innerText)
+        // nome1.style.fontSize = '20px'
+        var inome = window.document.getElementsByName('nome')[0]
+        window.document.write(inome.innerText)
+        inome.style.color = 'red'
+        inome.style.fontSize = '20px'
+        inome.style.fontWeight = 'bolder'
 
 
 
