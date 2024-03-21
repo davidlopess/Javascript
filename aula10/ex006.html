@@ -13,14 +13,50 @@
             width:200px;
             height:200px;
             color: white;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div id="area">
+    <!-- função dentro do HTML
+        <div id="area" onclick="clicar()" onmousedown="segurar()" onmouseup="soltar()" onmouseout="saiu()">
+        Interaja...
+
+    </div> 
+-->
+
+    <div id="area" >
         Interaja...
 
     </div>
+
+    <script>
+
+          var ar = window.document.getElementById('area')
+          ar.addEventListener('click', clicar)
+          ar.addEventListener('mouseout',saiu )
+          ar.addEventListener('mouseenter', entrar)
+        function clicar(){
+          
+            ar.innerText = 'clicou'
+            ar.style.background = 'red'
+            ar.style.textAlign = 'left'
+            
+        }
+
+         function entrar(){
+             ar.style.background = 'red'
+             ar.innerText = 'entrou'
+             ar.style.textAlign = 'right'
+        }
+
+        
+         function saiu(){
+             ar.innerText = 'saiu'
+             ar.style.backgroundColor = 'blue'
+             ar.style.textAlign = 'center'
+        }
+    </script>
     
 </body>
 </html>
