@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            position: relative;
+        }
+
+        body{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 1%);
+        }
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid;
+            text-align: center;
+            width:400px;
+            height: 300px;
+            position: relative;
+        }
+
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid;
+            text-align: center;
+            width:400px;
+            height: 300px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        input{
+            outline: none;
+            text-align: center;
+            font-size: 20px;
+        }
+       
+       
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        <br>
+        <br>
+        <input type="number" name="txtn2" id="txtn2">
+        <br>
+        <br>
+        <input type="button" value="Calcular" onclick="somar()">
+        <h2 id="res">
+        </h2>
+    </header>
+    <main>
+        <h1>calculando idade</h1>
+        <form action="#">
+            <div>
+                <p>Quantos anos vc Tem?</p>
+                <input type="text" name="idade" id="e-idade">
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Calcular ano de Nascimento" onclick="clicou()">
+            </div>
+            <h2 id="resultado"></h2>
+             
+        </form>
+    </main>
+    
+</body>
+<script>
+    function somar(){
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+
+        res.innerText = `${s} `
+        
+         
+    }
+
+    function clicou(){
+            var idade1 = window.document.getElementById('e-idade')
+            var ano = window.document.getElementById('resultado')
+            var na = Number(idade1.value)
+            var s1 = 2024 - na
+            ano.innerText = s1
+          }
+
+
+</script>   
+    
+</html>
