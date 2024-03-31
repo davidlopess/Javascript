@@ -65,36 +65,52 @@
                 <input type="text" name="idade" id="e-idade">
             </div>
             <br>
+
             <div>
                 <input type="button" value="Calcular ano de Nascimento" onclick="clicou()">
             </div>
-            <h2 id="resultado"></h2>
+            <h2 id="result"></h2>
              
         </form>
     </main>
     
 </body>
 <script>
-    function somar(){
-        var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.getElementById('txtn2')
-        var res = window.document.getElementById('res')
-        var n1 = Number(tn1.value)
-        var n2 = Number(tn2.value)
-        var s = n1 + n2
 
-        res.innerText = `${s} `
+    //  function clicou(){
+    //      var idade = window.document.getElementById('e-idade')
+    //      var ano2 = window.document.getElementById('result')
+    //      var valor01 = Number(idade.value)
+    //      var sn = 2024 - valor01
+    //      ano2.innerText = sn
+
+    //  }
+
+
+
+
+
+    
+      function somar(){
+          var tn1 = window.document.getElementById('txtn1')
+          var tn2 = window.document.getElementById('txtn2')
+          var res = window.document.getElementById('res')
+          var n1 = Number(tn1.value)
+          var n2 = Number(tn2.value)
+          var s = n1 + n2
+
+          res.innerText = `${s} `
         
          
-    }
+      }
 
-    function clicou(){
-            var idade1 = window.document.getElementById('e-idade')
-            var ano = window.document.getElementById('resultado')
-            var na = Number(idade1.value)
-            var s1 = 2024 - na
-            ano.innerText = s1
-          }
+      function clicou(){
+              var idade1 = window.document.getElementById('e-idade')
+              var ano = window.document.getElementById('result')
+              var na = Number(idade1.value)
+              var s1 = 2024 - na
+              ano.innerText = s1
+           }
 
 
 </script>   
